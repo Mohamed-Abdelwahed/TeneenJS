@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+
+    /*
+    these coe not work because it cannot access element in page before loading the page 
+    */
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red"
+ 
+
+      document.write("<h1 id='header'>Mohamed Abdelwahed</h1>")
+      let myH = document.createElement("h1")
+      myH.innerText = "MOhamed Abdelwahed"
+      myH.style.color = "blue"
+
+      document.getElementById("header").style.color = "blue";
+      document.getElementById("header").style.fontWeight = "bold"
+      document.getElementById("header").style.textAlign = "center"
+      document.getElementById("header").style.fontFamily = "Arial"
+      document.getElementById("header").style.fontSize = 40
+
+
+      console.log("%cMohamed %cAbdelwahed %cMohamed", "font-size:40px;color:red","font-size:40px;color:green;font-weight:bold","font-size:40px;color:blue" )
+
+
+      console.group("group 1")
+      console.log("message")
+      console.log("message")
+      console.group("group 2")
+      console.log("message");
+      console.log("message");
+      console.group("grand child")
+      console.log("messag");
+      console.log("messag");
+      console.groupEnd()
+      console.groupEnd()
+      console.groupEnd()
+      console.group("group 2 ")
+      console.log("message");
+      console.log("message");
+
+    //   /////////////
+    console.table(["mohamed","mohamed","mohamed","mohamed"])
+
+    // /////////
+    // console.log("Iam In Console");
+
+    /*
+    document.write("Iam In Page");
+    */
+    </script>
+  </body>
+</html>
